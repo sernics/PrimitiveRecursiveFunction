@@ -2,21 +2,21 @@ package src.Functions;
 
 import src.NaturalNumber;
 
-public class Zero implements PrimitiveRecursiveFunction {
+public class Sucesor implements PrimitiveRecursiveFunction {
   private Number inputNumber;
   private Number outputNumber;
   private NaturalNumber result;
 
-  public Zero(Number inputNumber, Number outputNumber) {
+  public Sucesor(Number inputNumber, Number outputNumber) {
     this.inputNumber = inputNumber;
     this.outputNumber = outputNumber;
     this.result = new NaturalNumber(-1);
   }
   public NaturalNumber operate(NaturalNumber n) {
     if (this.inputNumber.intValue() != 1 || this.outputNumber.intValue() != 1) {
-      throw new IllegalArgumentException("Zero function only accepts 1 as input and output values");
+      throw new IllegalArgumentException("Sucesor function only accepts 1 as input and output values");
     }
-    result = new NaturalNumber(0);
+    result = new NaturalNumber(n.getNumbers().get(0).intValue() + 1);
     return result;
   }
   public Number inputValues() {
