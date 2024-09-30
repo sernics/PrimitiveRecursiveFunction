@@ -23,4 +23,10 @@ public class NaturalNumber {
   public ArrayList<Number> getNumbers() {
     return numbers;
   }
+  @Override
+  public String toString() {
+    return "NaturalNumber{" +
+            "numbers=" + numbers +
+            '}';
+  }
 }
