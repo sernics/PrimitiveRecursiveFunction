@@ -3,13 +3,13 @@ package src.Functions;
 import src.NaturalNumber;
 import java.util.ArrayList;
 
-public class Composition implements PrimitiveRecursiveFunction {
+public class Combination implements PrimitiveRecursiveFunction {
   private Number inputNumber;
   private Number outputNumber;
   private NaturalNumber first;
   private NaturalNumber result;
 
-  public Composition(Number inputNumber, Number outputNumber, NaturalNumber first) {
+  public Combination(Number inputNumber, Number outputNumber, NaturalNumber first) {
     this.inputNumber = inputNumber;
     this.outputNumber = outputNumber;
     this.first = first;
