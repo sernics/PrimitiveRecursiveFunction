@@ -15,9 +15,9 @@ public class Proyection implements PrimitiveRecursiveFunction  {
     this.result = new NaturalNumber(-1);
   }
   public NaturalNumber operate(NaturalNumber n) {
-    // if (this.inputNumber.intValue() > this.result.getNumbers().size() || this.outputNumber.intValue() != 1) {
-    //   throw new IllegalArgumentException("Proyection function only accepts 1 as output value and the input value must be less than the number of elements in the input list");
-    // }
+    if (n.getNumbers().size() < this.objetiveIndex.intValue() || this.outputNumber.intValue() != 1) {
+      throw new IllegalArgumentException("Proyection function only accepts 1 as output value and the input value must be less than the number of elements in the input list");
+    }
     result = new NaturalNumber(n.getNumbers().get(objetiveIndex.intValue() - 1));
     return result;
   }
