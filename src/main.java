@@ -1,5 +1,6 @@
 package src;
 
+import src.Functions.Composition;
 import src.Functions.PrimitiveRecursiveFunction;
 import src.Functions.Proyection;
 import src.Functions.Sucesor;
@@ -14,7 +15,10 @@ public class Main {
     n.add(f.operate(n).getNumbers().get(0));
     f = new Proyection(n.getNumbers().size(), 1, 2);
     System.out.println(n);
-    n = f.operate(n);
-    System.out.println(n);
+    NaturalNumber n2 = f.operate(n);
+    System.out.println(n2);
+    f = new Composition(n.getNumbers().size(), n.getNumbers().size() + n2.getNumbers().size(), n);
+    NaturalNumber n3 = f.operate(n2);
+    System.out.println(n3);
   }
 }
