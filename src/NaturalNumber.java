@@ -24,6 +24,9 @@ public class NaturalNumber {
   public ArrayList<Number> getNumbers() {
     return numbers;
   }
+  public NaturalNumber copy() {
+    return new NaturalNumber(numbers);
+  }
   @Override
   public String toString() {
     return "NaturalNumber{" +
