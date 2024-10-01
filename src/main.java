@@ -7,8 +7,8 @@ import src.Functions.Suma;
 
 public class Main {
   public static void main(String[] args) {
-    NaturalNumber n1 = new NaturalNumber(90);
-    NaturalNumber n2 = new NaturalNumber(7);
+    NaturalNumber n1 = new NaturalNumber(2);
+    NaturalNumber n2 = new NaturalNumber(1000);
     PrimitiveRecursiveFunction suma = new Suma();
     PrimitiveRecursiveFunction composition = new Composition(suma);
     PrimitiveRecursiveFunction combination = new Combination(1, 2, n1);

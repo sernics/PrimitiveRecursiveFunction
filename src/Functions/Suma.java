@@ -27,9 +27,9 @@ public class Suma implements PrimitiveRecursiveFunction {
       NaturalNumber value = this.operate(parameters);
 
       parameters.add(value.getNumbers().get(0).intValue());
-
-      NaturalNumber valueToSuccess = proyection.operate(parameters);
-      this.result = sucesor.operate(valueToSuccess);
+      
+      PrimitiveRecursiveFunction composition = new Composition(sucesor);
+      this.result = composition.operate(proyection.operate(parameters));
 
       return this.result;
     }
