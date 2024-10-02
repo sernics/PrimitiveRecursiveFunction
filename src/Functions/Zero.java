@@ -1,16 +1,19 @@
 package src.Functions;
 
+import src.CounterClass;
 import src.NaturalNumber;
 
 public class Zero extends PrimitiveRecursiveFunction {
   private Number inputNumber;
   private Number outputNumber;
   private NaturalNumber result;
+  private CounterClass counter;
 
-  public Zero(Number inputNumber, Number outputNumber) {
+  public Zero(Number inputNumber, Number outputNumber, CounterClass counter) {
     this.inputNumber = inputNumber;
     this.outputNumber = outputNumber;
     this.result = new NaturalNumber(-1);
+    this.counter = counter;
   }
   public NaturalNumber operate(NaturalNumber n) {
     if (this.inputNumber.intValue() != 1 || this.outputNumber.intValue() != 1) {
