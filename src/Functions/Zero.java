@@ -16,6 +16,7 @@ public class Zero extends PrimitiveRecursiveFunction {
     this.counter = counter;
   }
   public NaturalNumber operate(NaturalNumber n) {
+    this.counter.incrementCounter();
     if (this.inputNumber.intValue() != 1 || this.outputNumber.intValue() != 1) {
       throw new IllegalArgumentException("Zero function only accepts 1 as input and output values");
     }
