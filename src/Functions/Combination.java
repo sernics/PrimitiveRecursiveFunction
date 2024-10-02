@@ -3,7 +3,7 @@ package src.Functions;
 import src.NaturalNumber;
 import java.util.ArrayList;
 
-public class Combination implements PrimitiveRecursiveFunction {
+public class Combination extends PrimitiveRecursiveFunction {
   private Number inputNumber;
   private Number outputNumber;
   private NaturalNumber first;

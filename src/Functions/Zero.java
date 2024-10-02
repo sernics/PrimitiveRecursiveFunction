@@ -2,7 +2,7 @@ package src.Functions;
 
 import src.NaturalNumber;
 
-public class Zero implements PrimitiveRecursiveFunction {
+public class Zero extends PrimitiveRecursiveFunction {
   private Number inputNumber;
   private Number outputNumber;
   private NaturalNumber result;
