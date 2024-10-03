@@ -11,9 +11,9 @@ public class Main {
     CounterClass counter = new CounterClass();
     Scanner scanner = new Scanner(System.in);
     System.out.print("Ingrese el primer número: ");
-    NaturalNumber n1 = new NaturalNumber(scanner.nextInt());
+    NaturalNumber n1 = new ReadNumber().read(scanner);
     System.out.print("Ingrese el segundo número: ");
-    NaturalNumber n2 = new NaturalNumber(scanner.nextInt());
+    NaturalNumber n2 = new ReadNumber().read(scanner);
     scanner.close();
     PrimitiveRecursiveFunction combination = new Combination(1, 2, n1);
     PrimitiveRecursiveFunction pow = new Pow(counter);
